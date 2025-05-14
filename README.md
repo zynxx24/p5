@@ -32,7 +32,3 @@ Sebuah website sederhana yang menampilkan kearifan lokal Bali melalui kuliner tr
 ## Kontributor
 
 Dikembangkan oleh Kelompok 5
-
-## Lisensi
-
-© 2023 Kearifan Lokal Bali
