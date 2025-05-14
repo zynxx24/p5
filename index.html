@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warisan Kuliner Bali</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-amber-50 text-gray-800">
+  <!-- Hero Section with Navigation -->
+  <header class="relative bg-cover bg-center h-screen" style="background-image: url('/api/placeholder/1200/800');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <nav class="relative z-10 container mx-auto px-6 py-4 flex items-center justify-between">
+      <div>
+        <h1 class="text-white text-2xl md:text-3xl font-bold">WARISAN KULINER BALI</h1>
+      </div>
+      <ul class="hidden md:flex space-x-8 text-white">
+        <li><a href="#tentang" class="hover:text-yellow-300 transition duration-300">Tentang</a></li>
+        <li><a href="#kuliner" class="hover:text-yellow-300 transition duration-300">Kuliner</a></li>
+        <li><a href="#ulasan" class="hover:text-yellow-300 transition duration-300">Ulasan</a></li>
+      </ul>
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-white">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </nav>
+    
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="hidden relative z-10 md:hidden bg-gray-900 bg-opacity-95 p-6 text-center">
+      <ul class="space-y-4 text-white">
+        <li><a href="#tentang" class="block py-2 hover:text-yellow-300 transition duration-300">Tentang</a></li>
+        <li><a href="#kuliner" class="block py-2 hover:text-yellow-300 transition duration-300">Kuliner</a></li>
+        <li><a href="#ulasan" class="block py-2 hover:text-yellow-300 transition duration-300">Ulasan</a></li>
+      </ul>
+    </div>
+    
+    <!-- Hero Content -->
+    <div class="relative z-10 h-full flex items-center">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+          Menjelajahi Cita Rasa <span class="text-yellow-400">Kearifan Lokal Bali</span>
+        </h2>
+        <p class="text-gray-200 text-lg md:text-xl max-w-3xl mx-auto mb-10">
+          Kelompok 5 mempersembahkan perjalanan kuliner autentik melalui hidangan legendaris Pulau Dewata:
+          Sambel Adam khas Ungasan dan Mujair Nyat-Nyat khas Kintamani
+        </p>
+        <a href="#kuliner" class="bg-yellow-500 text-gray-900 font-semibold px-8 py-3 rounded-full hover:bg-yellow-400 transition duration-300 inline-block">Jelajahi Kuliner</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="tentang" class="py-16 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Tentang Kuliner Khas Bali</h2>
+          <div class="w-24 h-1 bg-yellow-500 mx-auto"></div>
+        </div>
+        <div class="max-w-4xl mx-auto">
+          <p class="text-gray-600 text-lg mb-6">
+            Kuliner Bali tidak hanya sekadar makanan, tetapi merupakan perpaduan sempurna antara sejarah, budaya, dan kearifan lokal yang telah diwariskan selama berabad-abad. Setiap hidangan memiliki filosofi mendalam dan menggunakan rempah-rempah khas yang menjadikannya begitu istimewa.
+          </p>
+          <p class="text-gray-600 text-lg">
+            Melalui proyek ini, kami ingin memperkenalkan dua hidangan legendaris dari Pulau Dewata yang mungkin belum banyak dikenal luas namun kaya akan cita rasa dan cerita di baliknya. Mari menjelajahi kekayaan kuliner Bali yang memikat selera dan menyimpan kebijaksanaan leluhur.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Culinary Section -->
+    <section id="kuliner" class="py-16 bg-amber-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Kuliner Khas Bali</h2>
+          <div class="w-24 h-1 bg-yellow-500 mx-auto"></div>
+        </div>
+
+        <!-- Mujair Nyat-Nyat Card -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-12 lg:flex">
+          <div class="lg:w-1/2">
+            <img src="mujairnyatnyat.jpg" alt="Mujair Nyat-Nyat" class="w-full h-full object-cover">
+          </div>
+          <div class="p-8 lg:w-1/2">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Mujair Nyat-Nyat Khas Kintamani</h3>
+            <p class="text-gray-600 mb-6">
+              Mujair Nyat-Nyat adalah permata kuliner dari Kintamani, kawasan pegunungan dengan panorama Danau Batur yang memukau. Hidangan ini menghadirkan ikan mujair segar yang dimasak dengan teknik tradisional hingga bumbu meresap sempurna ke dalam daging ikan.
+            </p>
+            <p class="text-gray-600 mb-6">
+              Kata "Nyat" dalam bahasa Bali berarti surut atau mengering, menggambarkan proses memasak yang membiarkan kuah hampir habis sehingga menyisakan intensitas rempah yang begitu kaya dan mendalam. Perpaduan bumbu base genep—racikan rempah khas Bali—menciptakan harmoni rasa yang tak terlupakan.
+            </p>
+            
+            <div class="mb-6">
+              <h4 class="font-semibold text-gray-800 mb-2">Bahan-bahan:</h4>
+              <ul class="text-gray-600 grid grid-cols-2 gap-2">
+                <li class="flex items-center"><span class="text-yellow-500 mr-2">•</span> Ikan mujair (±1 kg)</li>
+                <li class="flex items-center"><span class="text-yellow-500 mr-2">•</span> 5 siung bawang putih</li>
+                <li class="flex items-center"><span class="text-yellow-500 mr-2">•</span> 5 butir bawang merah</li>
+                <li class="flex items-center"><span class="text-yellow-500 mr-2">•</span> 1 sdt ketumbar</li>
+                <li class="flex items-center"><span class="text-yellow-500 mr-2">•</span> ½ sdt merica</li>
+                <li class="flex items-center"><span class="text-yellow-500 mr-2">•</span> 2 butir kemiri</li>
+                <li class="flex items-center"><span class="text-yellow-500 mr-2">•</span> 1 ruas jahe</li>
+                <li class="flex items-center"><span class="text-yellow-500 mr-2">•</span> 1 ruas kunyit</li>
+                <li class="flex items-center"><span class="text-yellow-500 mr-2">•</span> 1½ ruas lengkuas</li>
+                <li class="flex items-center"><span class="text-yellow-500 mr-2">•</span> 1½ ruas kencur</li>
+                <li class="flex items-center"><span class="text-yellow-500 mr-2">•</span> Cabe rawit merah</li>
+                <li class="flex items-center"><span class="text-yellow-500 mr-2">•</span> ½ keping terasi</li>
+                <li class="flex items-center"><span class="text-yellow-500 mr-2">•</span> 2 lembar daun salam</li>
+                <li class="flex items-center"><span class="text-yellow-500 mr-2">•</span> Gula merah (opsional)</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 class="font-semibold text-gray-800 mb-2">Cara Memasak:</h4>
+              <ol class="text-gray-600 space-y-2 list-decimal pl-5">
+                <li>Bersihkan ikan, beri perasan jeruk nipis dan diamkan selama 2–5 menit.</li>
+                <li>Haluskan semua bumbu. Cuci bersih ikan lalu goreng hingga setengah matang.</li>
+                <li>Tumis bumbu halus hingga harum, tambahkan ±1,5 gelas air. Setelah mendidih, masukkan ikan bersama daun salam, garam, dan penyedap rasa.</li>
+                <li>Masak dengan api sedang hingga kuah menyusut. Koreksi rasa dan sajikan dengan nasi hangat.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sambal Adam Card -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden lg:flex">
+          <div class="lg:w-1/2 order-2 lg:order-1">
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-gray-800 mb-4">Sambal Adam – Warisan Kuliner Ungasan</h3>
+              <p class="text-gray-600 mb-6">
+                Sambal Adam adalah pusaka kuliner dari Desa Ungasan, wilayah selatan Bali yang terkenal dengan Pura Uluwatu. Sambal ini menjadi pendamping sempurna berbagai hidangan Bali, menciptakan sensasi kesegaran dan kepedasan yang menggetarkan lidah.
+              </p>
+              <p class="text-gray-600 mb-6">
+                Keunikan Sambal Adam terletak pada kesederhanaan bahan namun kompleksitas rasa. Perpaduan daun kemangi yang aromatik dengan cabai segar menciptakan pengalaman gastronomi yang memorable. Rasanya yang autentik menjadikannya favorit warga lokal dan wisatawan yang mencari cita rasa sejati Bali.
+              </p>
+              
+              <div class="mb-6">
+                <h4 class="font-semibold text-gray-800 mb-2">Bahan-bahan:</h4>
+                <ul class="text-gray-600 space-y-1">
+                  <li class="flex items-center"><span class="text-yellow-500 mr-2">•</span> Kacang panjang (secukupnya)</li>
+                  <li class="flex items-center"><span class="text-yellow-500 mr-2">•</span> Segenggam daun kemangi segar</li>
+                  <li class="flex items-center"><span class="text-yellow-500 mr-2">•</span> 1 siung bawang putih (kesuna)</li>
+                  <li class="flex items-center"><span class="text-yellow-500 mr-2">•</span> Cabe rawit (sesuai selera)</li>
+                  <li class="flex items-center"><span class="text-yellow-500 mr-2">•</span> Garam secukupnya</li>
+                  <li class="flex items-center"><span class="text-yellow-500 mr-2">•</span> Penyedap rasa (opsional)</li>
+                </ul>
+              </div>
+              
+              <div>
+                <h4 class="font-semibold text-gray-800 mb-2">Cara Membuat:</h4>
+                <ol class="text-gray-600 space-y-2 list-decimal pl-5">
+                  <li>Siapkan semua bahan. Cuci bersih kacang panjang, lalu potong kecil-kecil.</li>
+                  <li>Cabut daun kemangi dari tangkainya dan cuci bersih.</li>
+                  <li>Menggunakan cobek/penampalan (alat uleg tradisional), uleg cabe rawit, bawang putih, garam dan penyedap rasa hingga halus.</li>
+                  <li>Masukkan kacang panjang dan daun kemangi, uleg sesuai selera—bisa halus atau agak kasar untuk tekstur yang lebih bervariasi.</li>
+                  <li>Koreksi rasa dan sajikan dengan nasi putih hangat beserta lauk pendamping.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/2 order-1 lg:order-2">
+            <img src="sambeladam.jpg" alt="Sambal Adam" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review Section -->
+    <section id="ulasan" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Bagikan Pendapat Anda</h2>
+          <p class="text-gray-600 text-lg max-w-2xl mx-auto">Kami sangat menghargai ulasan dan masukan Anda tentang kuliner khas Bali yang kami sajikan</p>
+          <div class="w-24 h-1 bg-yellow-500 mx-auto mt-4"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-white rounded-xl shadow-lg p-8">
+            <form id="form-ulasan" class="space-y-6" onsubmit="event.preventDefault(); tambahData();">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label for="nama" class="block text-gray-700 font-medium mb-2">Nama Lengkap</label>
+                  <input type="text" id="nama" name="nama" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                </div>
+                <div>
+                  <label for="pengenal" class="block text-gray-700 font-medium mb-2">Asal Daerah</label>
+                  <input type="text" id="pengenal" name="pengenal" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-gray-700 font-medium mb-2">Penilaian terhadap Penjelasan/Pelayanan Kami</label>
+                <div class="flex flex-wrap gap-4">
+                  <div class="flex items-center">
+                    <input type="radio" id="penilaian_baik" name="penilaian" value="Baik" class="h-4 w-4 text-yellow-500 focus:ring-yellow-500" required>
+                    <label for="penilaian_baik" class="ml-2 text-gray-700">Sangat Baik</label>
+                  </div>
+                  <div class="flex items-center">
+                    <input type="radio" id="penilaian_cukup" name="penilaian" value="Cukup Baik" class="h-4 w-4 text-yellow-500 focus:ring-yellow-500">
+                    <label for="penilaian_cukup" class="ml-2 text-gray-700">Cukup Baik</label>
+                  </div>
+                  <div class="flex items-center">
+                    <input type="radio" id="penilaian_kurang" name="penilaian" value="Kurang Baik" class="h-4 w-4 text-yellow-500 focus:ring-yellow-500">
+                    <label for="penilaian_kurang" class="ml-2 text-gray-700">Kurang Baik</label>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <label for="penilaian_makanan" class="block text-gray-700 font-medium mb-2">Penilaian Terhadap Kuliner (1-10)</label>
+                <div class="flex items-center">
+                  <input type="range" id="penilaian_makanan" name="penilaian_makanan" min="1" max="10" value="8" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-yellow-500">
+                  <span id="nilai_makanan" class="ml-4 text-gray-700 font-medium">8/10</span>
+                </div>
+              </div>
+
+              <div>
+                <label for="masukkan" class="block text-gray-700 font-medium mb-2">Kritik dan Saran</label>
+                <textarea id="masukkan" name="masukkan" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-yellow-500 text-white font-semibold py-3 px-6 rounded-lg hover:bg-yellow-600 transition duration-300">Kirim Ulasan</button>
+            </form>
+          </div>
+
+          <!-- Reviews List -->
+          <div class="mt-12">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">Ulasan Terbaru</h3>
+            <div id="daftar-ulasan" class="space-y-4">
+              <!-- Reviews will be populated here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <h2 class="text-2xl font-bold">Warisan Kuliner Bali</h2>
+          <p class="text-gray-400 mt-2">Melestarikan kearifan lokal melalui kuliner</p>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p>&copy; 2023 Kearifan Lokal Bali - Kelompok 5</p>
+        <div class="mt-4 md:mt-0">
+          <a href="#tentang" class="text-gray-400 hover:text-yellow-400 transition duration-300 mx-3">Tentang</a>
+          <a href="#kuliner" class="text-gray-400 hover:text-yellow-400 transition duration-300 mx-3">Kuliner</a>
+          <a href="#ulasan" class="text-gray-400 hover:text-yellow-400 transition duration-300 mx-3">Ulasan</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // Range slider value display
+    document.getElementById('penilaian_makanan').addEventListener('input', function() {
+      document.getElementById('nilai_makanan').textContent = this.value + '/10';
+    });
+    
+    // Local storage for reviews
+    let dataUlasan = [];
+    
+    // Load initial data
+    function ambilData() {
+      const localData = JSON.parse(localStorage.getItem('ulasan_kuliner_bali')) || [];
+      dataUlasan = localData;
+      renderUlasan();
+    }
+    
+    // Render reviews to the page
+    function renderUlasan() {
+      const listContainer = document.getElementById('daftar-ulasan');
+      listContainer.innerHTML = '';
+      
+      if (dataUlasan.length === 0) {
+        const emptyMessage = document.createElement('div');
+        emptyMessage.className = 'text-center py-8 text-gray-500';
+        emptyMessage.textContent = 'Belum ada ulasan. Jadilah yang pertama memberikan ulasan!';
+        listContainer.appendChild(emptyMessage);
+        return;
+      }
+      
+      dataUlasan.forEach((item, index) => {
+        const reviewCard = document.createElement('div');
+        reviewCard.className = 'bg-white rounded-lg shadow-md p-6';
+        
+        const reviewHeader = document.createElement('div');
+        reviewHeader.className = 'flex justify-between items-center mb-4';
+        
+        const reviewerInfo = document.createElement('div');
+        const reviewerName = document.createElement('h4');
+        reviewerName.className = 'font-bold text-gray-800';
+        reviewerName.textContent = item.nama;
+        
+        const reviewerOrigin = document.createElement('p');
+        reviewerOrigin.className = 'text-gray-600 text-sm';
+        reviewerOrigin.textContent = 'Dari: ' + item.pengenal;
+        
+        reviewerInfo.appendChild(reviewerName);
+        reviewerInfo.appendChild(reviewerOrigin);
+        
+        const ratings = document.createElement('div');
+        ratings.className = 'flex flex-col items-end';
+        
+        const serviceRating = document.createElement('span');
+        serviceRating.className = 'text-sm text-gray-600';
+        serviceRating.textContent = 'Pelayanan: ' + item.penilaian;
+        
+        const foodRating = document.createElement('span');
+        foodRating.className = 'text-sm font-medium text-yellow-600';
+        foodRating.textContent = 'Kuliner: ' + item.penilaian_makanan + '/10';
+        
+        ratings.appendChild(serviceRating);
+        ratings.appendChild(foodRating);
+        
+        reviewHeader.appendChild(reviewerInfo);
+        reviewHeader.appendChild(ratings);
+        
+        const reviewContent = document.createElement('p');
+        reviewContent.className = 'text-gray-700';
+        reviewContent.textContent = item.masukkan;
+        
+        
+        reviewCard.appendChild(reviewHeader);
+        reviewCard.appendChild(reviewContent);
+        
+        listContainer.appendChild(reviewCard);
+      });
+    }
+    
+    // Add new review
+    function tambahData() {
+      const form = document.getElementById('form-ulasan');
+      const nama = document.getElementById('nama').value;
+      const pengenal = document.getElementById('pengenal').value;
+      const penilaian = document.querySelector('input[name="penilaian"]:checked').value;
+      const penilaian_makanan = document.getElementById('penilaian_makanan').value;
+      const masukkan = document.getElementById('masukkan').value;
+      
+      if (!nama || !pengenal || !masukkan) return;
+      
+      const ulasanBaru = {
+        nama,
+        pengenal,
+        penilaian,
+        penilaian_makanan,
+        masukkan,
+        tanggal: new Date().toLocaleDateString()
+      };
+      
+      dataUlasan.unshift(ulasanBaru); // Add to beginning of array
+      localStorage.setItem('ulasan_kuliner_bali', JSON.stringify(dataUlasan));
+      
+      renderUlasan();
+      form.reset();
+      
+      // Show success message
+      alert('Terima kasih! Ulasan Anda telah berhasil dikirim.');
+      
+      // Scroll to reviews list
+      document.getElementById('daftar-ulasan').scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    // Delete review
+    function hapusUlasan(index) {
+      if (confirm('Apakah Anda yakin ingin menghapus ulasan ini?')) {
+        dataUlasan.splice(index, 1);
+        localStorage.setItem('ulasan_kuliner_bali', JSON.stringify(dataUlasan));
+        renderUlasan();
+      }
+    }
+    
+    // Initialize
+    document.addEventListener('DOMContentLoaded', function() {
+      ambilData();
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          // Close mobile menu if open
+          document.getElementById('mobile-menu').classList.add('hidden');
+          
+          window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
