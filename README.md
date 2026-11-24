@@ -1,34 +1,22 @@
 # Warisan Kuliner Bali
 
-Sebuah website sederhana yang menampilkan kearifan lokal Bali melalui kuliner tradisional: Mujair Nyat-Nyat khas Kintamani dan Sambel Adam khas Ungasan.
+Website tugas P5 Kelompok 5 tentang dua kuliner tradisional Bali: Mujair Nyat-Nyat khas Kintamani dan Sambel Adam khas Ungasan.
 
-## Fitur
+**Buka:** [zynxx24.github.io/p5](https://zynxx24.github.io/p5/)
 
-- Desain responsif menggunakan Tailwind CSS
-- Informasi lengkap tentang kuliner khas Bali
-- Sistem ulasan interaktif dengan penyimpanan lokal
-- Tampilan yang menarik dan user-friendly
+<p>
+  <img src="docs/screenshot-desktop.webp" width="74%" alt="Hero website Warisan Kuliner Bali: Menjelajahi Cita Rasa Kearifan Lokal Bali">
+  <img src="docs/screenshot-mobile.webp" width="22%" alt="Website Warisan Kuliner Bali di HP">
+</p>
 
-## Teknologi
+## Isi halaman
 
-- HTML5
-- Tailwind CSS
-- JavaScript (Vanilla)
-- Local Storage API
+- Tentang kuliner khas Bali.
+- Detail kedua makanan: asal, bahan, dan cara membuatnya.
+- Form ulasan dengan penilaian. Ulasan dikirim ke Google Sheets lewat Google Apps Script.
 
-## Cara Penggunaan
+## Dibuat pakai
 
-1. Clone repository ini
-2. Buka file `index.html` di browser
-3. Eksplorasi konten dan fitur website
+HTML, Tailwind CSS (CDN), dan JavaScript biasa dalam satu file `index.html`. Tidak perlu build: buka `index.html` di browser. Pengiriman ulasan butuh koneksi internet.
 
-## Struktur Halaman
-
-- **Hero Section**: Pengenalan website
-- **Tentang**: Informasi tentang kuliner khas Bali
-- **Kuliner**: Detail makanan, bahan, dan cara pembuatan
-- **Ulasan**: Form untuk memberikan feedback dan melihat ulasan terbaru
-
-## Kontributor
-
-Dikembangkan oleh Kelompok 5
+Lisensi [MIT](LICENSE).
